@@ -17,7 +17,6 @@ public class ButtonController : MonoBehaviour
         KeyToPress = Keys[KeyLoop];
         if (Input.GetKeyDown(KeyToPress))
         {
-            Debug.Log("poo");
             KeyLoop += 1;
             if (KeyLoop > 5)
             {
