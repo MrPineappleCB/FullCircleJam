@@ -8,7 +8,7 @@ public class NoteSpawner : MonoBehaviour
     private float beatSpawnTime;
     private int currentNote = 0;
     public List<KeyCode> beatmap = new List<KeyCode>();
-    public List<Color> colors = new List<Color>();
+    public List<Sprite> sprites = new List<Sprite>();
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class NoteSpawner : MonoBehaviour
         note.GetComponent<NoteScript>().noteKey = beatmap[0];
         foreach (KeyCode key in GameManager.instance.Keys)
             if (key == beatmap[0])
-                note.GetComponent<SpriteRenderer>().color = colors[GameManager.instance.Keys.IndexOf(key)];
+                note.GetComponent<SpriteRenderer>().sprite = sprites[GameManager.instance.Keys.IndexOf(key)];
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class NoteSpawner : MonoBehaviour
             note.GetComponent<NoteScript>().noteKey = beatmap[currentNote];
             foreach (KeyCode key in GameManager.instance.Keys)
                 if (key == beatmap[currentNote])
-                    note.GetComponent<SpriteRenderer>().color = colors[GameManager.instance.Keys.IndexOf(key)];
+                    note.GetComponent<SpriteRenderer>().sprite = sprites[GameManager.instance.Keys.IndexOf(key)];
         }
     }
 }

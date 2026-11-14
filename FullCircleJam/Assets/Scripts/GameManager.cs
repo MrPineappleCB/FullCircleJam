@@ -1,12 +1,14 @@
 using System.ComponentModel;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
 
+    [Header("Settings")]
     public float bpm;
     public float startingBpm;
     public float speedMultiplier = 1;
@@ -15,6 +17,10 @@ public class GameManager : MonoBehaviour
     public KeyCode KeyToPress;
     public int KeyLoop = 0;
     public List<KeyCode> Keys = new List<KeyCode>();
+
+    [Header("UI")]
+    public Image keyToPressImage;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -57,5 +63,6 @@ public class GameManager : MonoBehaviour
             KeyLoop = 0;
 
         KeyToPress = Keys[KeyLoop];
+        keyToPressImage.sprite = GetComponent<NoteSpawner>().sprites[KeyLoop];
     }
 }
