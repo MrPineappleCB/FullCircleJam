@@ -509,6 +509,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/ButtonController.cs"
 "Assets/Scripts/ControlBeat.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/NoteScript.cs"
 "Assets/Scripts/StartScreen.cs"
 "Assets/Scripts/Timer.cs"

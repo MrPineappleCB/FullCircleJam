@@ -19,6 +19,8 @@ public class NoteScript : MonoBehaviour
             if (CanBePressed == true)
             {
                 gameObject.SetActive(false);
+
+                GameManager.instance.NoteHit();
             }
         }
     }
@@ -32,9 +34,11 @@ public class NoteScript : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collison)
     {
-        if(collison.tag == "RhythmPoint")
+        if(collison.tag == "RhythmPoint" && gameObject.activeSelf)
         {
             CanBePressed = false;
+
+            GameManager.instance.NoteMissed();
         }
     }
 }
