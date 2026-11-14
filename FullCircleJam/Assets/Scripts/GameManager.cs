@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     public Image keyToPressImage;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -40,6 +43,7 @@ public class GameManager : MonoBehaviour
         ChangeLoop();
         speedMultiplier+=0.01f;
         bpm = bpm*speedMultiplier;
+        audioSource.pitch = speedMultiplier;
     }
 
     public void NoteMissed()
@@ -47,6 +51,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Missed");
         speedMultiplier = 1;
         bpm = startingBpm;
+        audioSource.pitch = speedMultiplier;
     }
 
     public void WrongNoteHit()
@@ -54,6 +59,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Wrong Note");
         speedMultiplier = 1;
         bpm = startingBpm;
+        audioSource.pitch = speedMultiplier;
     }
 
     public void ChangeLoop()

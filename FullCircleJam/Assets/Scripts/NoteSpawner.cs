@@ -26,7 +26,7 @@ public class NoteSpawner : MonoBehaviour
         {
             beatSpawnTime = 0;
             currentNote++;
-            if (currentNote >= beatmap.Count)
+            if (currentNote >= beatmap.Count) //Just set up as a loop for testing, can be reused to end the game
                 currentNote = 0;
             GameObject note = Instantiate(notePrefab,spawnLocation);
             
