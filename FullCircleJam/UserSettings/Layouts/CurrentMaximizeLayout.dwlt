@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 9910
+  controlID: 4298
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -108,23 +108,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 865.2
-      height: 364.2
-    m_Scale: {x: 0.4215278, y: 0.4215278}
-    m_Translation: {x: 432.6, y: 182.1}
+      width: 1536
+      height: 671.8
+    m_Scale: {x: 0.7775463, y: 0.7775463}
+    m_Translation: {x: 768, y: 335.9}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1026.2668
+      x: -987.72253
       y: -432
-      width: 2052.5337
+      width: 1975.4451
       height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.4215278
-  m_LastWindowPixelSize: {x: 1081.5, y: 481.5}
+  m_defaultScale: 0.7775463
+  m_LastWindowPixelSize: {x: 1920, y: 866}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 9911
+  controlID: 4299
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 9912
+  controlID: 4300
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 276.8
     height: 411.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -253,13 +253,12 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_rawData: 568105589213729546
+      - m_rawData: 568105584918842760
       m_LastClickedID:
-        m_rawData: 568105589213729546
+        m_rawData: 568105584918842760
       m_ExpandedIDs:
-      - m_rawData: 568105589213754482
-      - m_rawData: 568105589213756042
-      - m_rawData: 568105584918842620
+      - m_rawData: 568105589213751412
+      - m_rawData: 568105589213756000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -884,9 +883,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 24.47514, y: -2.7262728, z: 0.005837604}
+    m_Target: {x: 20.555079, y: -3.3675065, z: -0.084831834}
     speed: 2
-    m_Value: {x: 24.47514, y: -2.7262728, z: 0.005837604}
+    m_Value: {x: 20.555079, y: -3.3675065, z: -0.084831834}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -937,9 +936,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.4182625
+    m_Target: 18.485153
     speed: 2
-    m_Value: 9.4182625
+    m_Value: 18.485153
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1151,7 +1150,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Art
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1161,7 +1160,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Art
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\corma\FullCircleJam\FullCircleJam
   m_LockTracker:
@@ -1170,13 +1169,13 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_rawData: 568105584918842702
+    - m_rawData: 568105584918843414
     m_LastClickedID:
-      m_rawData: 568105584918842702
+      m_rawData: 568105584918843414
     m_ExpandedIDs:
-    - m_rawData: 568105589213755344
+    - m_rawData: 568105589213755394
     - m_rawData: 0
-    - m_rawData: 568105584918842702
+    - m_rawData: 568105584918842862
     - m_rawData: 568105587066273791
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1210,9 +1209,9 @@ MonoBehaviour:
     m_LastClickedID:
       m_rawData: 0
     m_ExpandedIDs:
-    - m_rawData: 568105589213755344
+    - m_rawData: 568105589213755394
     - m_rawData: 0
-    - m_rawData: 568105584918842702
+    - m_rawData: 568105584918842862
     - m_rawData: 568105587066273791
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1242,9 +1241,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_rawData: 568105589213729546
+    - m_rawData: 568105584918842760
     m_LastClickedEntityId:
-      m_rawData: 568105589213729546
+      m_rawData: 568105584918842760
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_rawData: 0
@@ -1271,6 +1270,10 @@ MonoBehaviour:
     - m_rawData: 0
     - m_rawData: 0
     - m_rawData: 0
+    - m_rawData: 568105584918843468
+    - m_rawData: 568105584918843484
+    - m_rawData: 568105584918843500
+    - m_rawData: 568105584918843516
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
