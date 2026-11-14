@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &5317822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &42207581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &87942003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93400417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae776059ac846144b83d38600d561f03, type: 3}
   m_Name: 
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &222702233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &273611894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1566,7 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &485640587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &537090539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &540609167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &604138325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &606154350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2807,7 +2807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &708511175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2961,7 +2961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &790642326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3068,6 +3068,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &791228042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791228043}
+  m_Layer: 0
+  m_Name: NoteSpawnerLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &791228043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791228042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18, y: -4.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828751497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,7 +3146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &828751500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3269,7 +3300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &872532220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3502,7 +3533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &894292530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3656,7 +3687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &917256211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3810,7 +3841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &965608063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3964,7 +3995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &975692099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4118,7 +4149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &1010077116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4272,7 +4303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &1035195943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4426,7 +4457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &1074516701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4672,7 +4703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &1088342796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4826,7 +4857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &1232491446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4980,7 +5011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1240237193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5097,6 +5128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245835563}
   - component: {fileID: 1245835562}
+  - component: {fileID: 1245835564}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5116,6 +5148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0df9e9e40af5743a78b6d80f40dc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  bpm: 850
+  startingBpm: 170
+  speedMultiplier: 5
+  KeyToPress: 121
+  KeyLoop: 0
+  Keys: 790000006800000062000000760000006600000074000000
 --- !u!4 &1245835563
 Transform:
   m_ObjectHideFlags: 0
@@ -5131,6 +5169,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245835564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245835561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c433c610c1f7b0fb597bd02407638511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteSpawner
+  notePrefab: {fileID: 593920483822942207, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+  spawnLocation: {fileID: 791228043}
+  beatmap: 7900000068000000620000007400000076000000660000006200000074000000
+  colors:
+  - {r: 0, g: 0.038576126, b: 1, a: 1}
+  - {r: 0.11779827, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0.87355363, a: 1}
+  - {r: 0, g: 1, b: 0.94952244, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.84751457, b: 0, a: 1}
 --- !u!1 &1299199378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,7 +5238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1299199381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5516,7 +5576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &1339354946
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5670,7 +5730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &1371851178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5824,7 +5884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &1372307304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6070,7 +6130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &1424077347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6224,7 +6284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   CanBePressed: 0
-  correctKey: 121
+  noteKey: 0
 --- !u!61 &1425009071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6378,7 +6438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1445949877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6532,7 +6592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 118
+  noteKey: 0
 --- !u!61 &1459779080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6746,7 +6806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1474210969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6840,7 +6900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1476367492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6994,7 +7054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &1478483193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7148,7 +7208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &1503303905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7302,7 +7362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1548989552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7703,7 +7763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1639082354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7857,7 +7917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1697147096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8011,7 +8071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1714122809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8165,7 +8225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &1807258156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8319,7 +8379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1830564527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8473,7 +8533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 102
+  noteKey: 0
 --- !u!61 &1901915319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8627,7 +8687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1917029252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8781,7 +8841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 98
+  noteKey: 0
 --- !u!61 &1919570321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8935,7 +8995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 116
+  noteKey: 0
 --- !u!61 &1926943393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9058,7 +9118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2031331614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9135,160 +9195,11 @@ Transform:
   - {fileID: 1697147094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2073778440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2073778442}
-  - component: {fileID: 2073778441}
-  - component: {fileID: 2073778444}
-  - component: {fileID: 2073778443}
-  m_Layer: 0
-  m_Name: Y
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &2073778441
-SpriteRenderer:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073778440}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
-  m_BlendShapeWeights: []
---- !u!4 &2073778442
+--- !u!4 &2073778442 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+  m_PrefabInstance: {fileID: 331645466071392304}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073778440}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2031331615}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2073778443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073778440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f56586c51a27e7649af5e4862cc258c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  CanBePressed: 0
-  correctKey: 121
---- !u!61 &2073778444
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073778440}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2124189054
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,7 +9307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteScript
   CanBePressed: 0
-  correctKey: 104
+  noteKey: 0
 --- !u!61 &2124189058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9443,6 +9354,63 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &331645466071392304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2031331615}
+    m_Modifications:
+    - target: {fileID: 593920483822942207, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_Name
+      value: Y
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924826926833123493, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cca1cabb23b8346ac8a2e78fc0b91da4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -9458,3 +9426,4 @@ SceneRoots:
   - {fileID: 1325494825}
   - {fileID: 696215640}
   - {fileID: 310597987}
+  - {fileID: 791228043}
