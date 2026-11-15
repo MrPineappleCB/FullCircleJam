@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,11 +6,12 @@ public class StartScreen : MonoBehaviour
 {
     public void StartGame()
     {
-      SceneManager.LoadScene("SampleScene");  
+        if (Timer.Instance != null)
+        {
+            Timer.Instance.ResetTimer();
+        }
+
+        SceneManager.LoadScene("SampleScene");
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }

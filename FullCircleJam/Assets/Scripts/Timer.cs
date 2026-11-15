@@ -1,35 +1,50 @@
+
 using UnityEngine;
-using TMPro;
-using UnityEngine.SceneManagement;
+
 public class Timer : MonoBehaviour
 {
+    public static Timer Instance;
 
-    public float time = 60f;
-    public TextMeshProUGUI timerText;
-    public bool gameEnded = false;
-   
+    public float time = 0f;
+    private bool timerRunning = true;
 
-    // Update is called once per frame
-    void Update()
-{
-    if (!gameEnded)
+    void Awake()
     {
-        time -= Time.deltaTime;
-
-        if (time <= 0)
+        if (Instance == null)
         {
-            time = 0;
-            EndGame();
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-
-        timerText.text = Mathf.Floor(time).ToString();
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-}
 
-    void EndGame()
+    void Update()
     {
-        gameEnded = true;
-        SceneManager.LoadScene("EndScene");
+        if (timerRunning)
+        {
+            time += Time.deltaTime;
+        }
     }
 
+    public void StopTimer()
+    {
+        timerRunning = false;
+    }
+
+    public void ResetTimer()
+    {
+        time = 0f;
+        timerRunning = true;
+    }
+
+    public string GetFormattedTime()
+    {
+        int minutes = Mathf.FloorToInt(time / 60f);
+        int seconds = Mathf.FloorToInt(time % 60f);
+
+        return string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
 }
