@@ -5323,8 +5323,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ff05c954d7ad13048592432294a35d8, type: 3}
   - {fileID: 21300000, guid: c0341b22cb00654c68ec87a511168dd2, type: 3}
   - {fileID: 21300000, guid: bdda10934c551de81852149bfafeb653, type: 3}
-  noteGenAmount: 510
-  correctNoteAmount: 400
+  noteGenAmount: 255
+  correctNoteAmount: 200
 --- !u!1 &1299199378
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ public class NoteScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(GameManager.instance.bpm/60f*Time.deltaTime, 0f, 0f);
+        float speed = GameManager.instance.bpm / 60f * 2;
+        transform.position -= new Vector3(speed*Time.deltaTime, 0f, 0f);
 
         // if (Input.GetKeyDown(correctKey))
         // {
@@ -100,6 +101,7 @@ public class NoteScript : MonoBehaviour
             if (noteKey==GameManager.instance.KeyToPress)
                 GameManager.instance.BadHit();
             
+
             GameManager.instance.noteCounter++;
             
             Destroy(gameObject);
