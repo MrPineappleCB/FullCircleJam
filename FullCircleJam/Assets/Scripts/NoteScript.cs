@@ -34,6 +34,8 @@ public class NoteScript : MonoBehaviour
             if (Input.GetKeyDown(noteKey))
             {
                 GameManager.instance.NoteHit();
+                Debug.Log("Correct Note");
+                // GameManager.instance.noteCounter++;
                 Destroy(gameObject);
                 return;
             }
@@ -45,7 +47,9 @@ public class NoteScript : MonoBehaviour
 
                 if (Input.GetKeyDown(key))
                 {
-                    GameManager.instance.WrongNoteHit();
+                    GameManager.instance.BadHit();
+                    Debug.Log("Wrong key, correct note");
+                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
             }
@@ -57,7 +61,9 @@ public class NoteScript : MonoBehaviour
 
                 if (Input.GetKeyDown(key))
                 {
-                    GameManager.instance.WrongNoteHit();
+                    GameManager.instance.BadHit();
+                    Debug.Log("wrong key wrong note");
+                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
 
@@ -66,7 +72,9 @@ public class NoteScript : MonoBehaviour
             {
                 if (CanBePressed == true)
                 {
-                    GameManager.instance.WrongNoteHit();
+                    GameManager.instance.BadHit();
+                    Debug.Log("correct key wrong note");
+                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
             }
@@ -100,7 +108,10 @@ public class NoteScript : MonoBehaviour
         {
             CanBePressed = false;
             if (noteKey==GameManager.instance.KeyToPress)
-                GameManager.instance.NoteMissed();
+                GameManager.instance.BadHit();
+            
+            Debug.Log("Exit Trigger");
+            GameManager.instance.noteCounter++;
             
             Destroy(gameObject);
         }

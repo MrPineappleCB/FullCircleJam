@@ -10,8 +10,14 @@ public class NoteSpawner : MonoBehaviour
     public List<KeyCode> beatmap = new List<KeyCode>();
     public List<Sprite> sprites = new List<Sprite>();
 
+    public int noteGenAmount;
+
+    private bool stopped = false;
+
     private void Start()
     {
+        GenerateBeatmap();
+
         GameObject note = Instantiate(notePrefab,spawnLocation);
         note.GetComponent<NoteScript>().noteKey = beatmap[0];
         foreach (KeyCode key in GameManager.instance.Keys)
@@ -19,15 +25,33 @@ public class NoteSpawner : MonoBehaviour
                 note.GetComponent<SpriteRenderer>().sprite = sprites[GameManager.instance.Keys.IndexOf(key)];
     }
 
+    private void GenerateBeatmap()
+    {
+        for (int i = 0; i < noteGenAmount; i++) 
+        {
+            KeyCode pickedNote = GameManager.instance.Keys[Random.Range(0,GameManager.instance.Keys.Count)];
+            beatmap.Add(pickedNote);
+        }
+
+        //Idea so i dont forget or for someone else to build off of
+        //Generate like 300-400 notes or smth in the correct order (yhbvft)
+        //Then keep adding random notes in random indexes until it gets filled to the noteGenAmount;
+        //Maybe will work idrk, idk how else this would work
+    }
+
     void Update()
     {
+        if (stopped) return;
         beatSpawnTime+= Time.deltaTime;
         if (beatSpawnTime >= GameManager.instance.startingBpm/60f/GameManager.instance.speedMultiplier)
         {
             beatSpawnTime = 0;
             currentNote++;
-            if (currentNote >= beatmap.Count) //Just set up as a loop for testing, can be reused to end the game
-                currentNote = 0;
+            if (currentNote >= beatmap.Count)
+            {
+                stopped = true;
+                return;
+            }
             GameObject note = Instantiate(notePrefab,spawnLocation);
             
             note.GetComponent<NoteScript>().noteKey = beatmap[currentNote];

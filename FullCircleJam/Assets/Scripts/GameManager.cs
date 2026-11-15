@@ -2,11 +2,15 @@ using System.ComponentModel;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
+
+    [Header("Variables")]
+    public int noteCounter;
 
     [Header("Settings")]
     public float bpm;
@@ -34,29 +38,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (noteCounter > GetComponent<NoteSpawner>().noteGenAmount)
+            SceneManager.LoadScene("EndScene");
     }
 
     public void NoteHit()
     {
-        Debug.Log("it");
         ChangeLoop();
         speedMultiplier+=0.01f;
         bpm = bpm*speedMultiplier;
         audioSource.pitch = speedMultiplier;
     }
 
-    public void NoteMissed()
+    public void BadHit()
     {
-        Debug.Log("Missed");
-        speedMultiplier = 1;
-        bpm = startingBpm;
-        audioSource.pitch = speedMultiplier;
-    }
-
-    public void WrongNoteHit()
-    {
-        Debug.Log("Wrong Note");
         speedMultiplier = 1;
         bpm = startingBpm;
         audioSource.pitch = speedMultiplier;
