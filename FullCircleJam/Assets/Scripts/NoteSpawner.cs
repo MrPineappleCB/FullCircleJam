@@ -66,7 +66,7 @@ public class NoteSpawner : MonoBehaviour
     {
         if (stopped) return;
         beatSpawnTime+= Time.deltaTime;
-        if (beatSpawnTime >= GameManager.instance.startingBpm/60f/GameManager.instance.speedMultiplier)
+        if (beatSpawnTime >= 60f / GameManager.instance.bpm* 2)
         {
             beatSpawnTime = 0;
             currentNote++;
