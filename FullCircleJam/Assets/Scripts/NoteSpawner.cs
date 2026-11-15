@@ -11,6 +11,9 @@ public class NoteSpawner : MonoBehaviour
     public List<Sprite> sprites = new List<Sprite>();
 
     public int noteGenAmount;
+    public int correctNoteAmount;
+
+    private int keyLoop;
 
     private bool stopped = false;
 
@@ -27,16 +30,36 @@ public class NoteSpawner : MonoBehaviour
 
     private void GenerateBeatmap()
     {
-        for (int i = 0; i < noteGenAmount; i++) 
-        {
-            KeyCode pickedNote = GameManager.instance.Keys[Random.Range(0,GameManager.instance.Keys.Count)];
-            beatmap.Add(pickedNote);
-        }
+        // for (int i = 0; i < noteGenAmount; i++) 
+        // {
+        //     KeyCode pickedNote = GameManager.instance.Keys[Random.Range(0,GameManager.instance.Keys.Count)];
+        //     beatmap.Add(pickedNote);
+        // }
 
         //Idea so i dont forget or for someone else to build off of
         //Generate like 300-400 notes or smth in the correct order (yhbvft)
         //Then keep adding random notes in random indexes until it gets filled to the noteGenAmount;
         //Maybe will work idrk, idk how else this would work
+
+        for (int i = 0; i < correctNoteAmount; i++) 
+        {
+            
+            if (keyLoop > 5)
+                keyLoop = 0;
+            beatmap.Add(GameManager.instance.Keys[keyLoop]);
+            keyLoop++;
+
+            if (beatmap.Count == correctNoteAmount)
+                GenerateWrongNotes();
+        }
+    }
+
+    private void GenerateWrongNotes()
+    {
+        for (int i = 0; i < noteGenAmount-correctNoteAmount; i++)
+        {
+            beatmap.Insert(Random.Range(0,beatmap.Count+1),GameManager.instance.Keys[Random.Range(0,GameManager.instance.Keys.Count)]);
+        }
     }
 
     void Update()

@@ -34,8 +34,6 @@ public class NoteScript : MonoBehaviour
             if (Input.GetKeyDown(noteKey))
             {
                 GameManager.instance.NoteHit();
-                Debug.Log("Correct Note");
-                // GameManager.instance.noteCounter++;
                 Destroy(gameObject);
                 return;
             }
@@ -43,13 +41,9 @@ public class NoteScript : MonoBehaviour
             
             foreach (KeyCode key in GameManager.instance.Keys)
             {
-                //if (key == GameManager.instance.KeyToPress) return;
-
                 if (Input.GetKeyDown(key))
                 {
                     GameManager.instance.BadHit();
-                    Debug.Log("Wrong key, correct note");
-                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
             }
@@ -62,8 +56,6 @@ public class NoteScript : MonoBehaviour
                 if (Input.GetKeyDown(key))
                 {
                     GameManager.instance.BadHit();
-                    Debug.Log("wrong key wrong note");
-                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
 
@@ -73,8 +65,6 @@ public class NoteScript : MonoBehaviour
                 if (CanBePressed == true)
                 {
                     GameManager.instance.BadHit();
-                    Debug.Log("correct key wrong note");
-                    // GameManager.instance.noteCounter++;
                     Destroy(gameObject);
                 }
             }
@@ -110,7 +100,6 @@ public class NoteScript : MonoBehaviour
             if (noteKey==GameManager.instance.KeyToPress)
                 GameManager.instance.BadHit();
             
-            Debug.Log("Exit Trigger");
             GameManager.instance.noteCounter++;
             
             Destroy(gameObject);
